@@ -1,0 +1,31 @@
+body {
+background-color: #fff0f3;
+font-family: Arial,Sans-Serif;
+margin: 0;
+}
+
+header {
+background-color:#ff4d6d;
+color:white;
+text-align: center;
+padding:30px;
+}
+
+h1{
+  margin:0;
+  font-size:36px;
+}
+
+h2{
+  color:#ff4e6d;
+}
+
+section {
+  width: 90%;
+  max-width: 800px;
+  margin: 30px auto;
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  border: 3px solid red; /* 👈 para ver el contenedor */
+}
