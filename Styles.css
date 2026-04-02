@@ -1,31 +1,171 @@
 body {
-background-color: #fff0f3;
-font-family: Arial,Sans-Serif;
-margin: 0;
+  background-color: #fff0f3;
+  font-family: Arial, sans-serif;
+  margin: 0;
+  color: #333;
 }
 
 header {
-background-color:#ff4d6d;
-color:white;
-text-align: center;
-padding:30px;
+  background-image:
+  url(imagenes/mesadolce.png);
+  background-size: cover;
+  background-position: center;
+  color: white;
+  text-align: center;
+  padding: 60px 20px;
 }
 
-h1{
-  margin:0;
-  font-size:36px;
+h1 {
+  /* PRUEBA ESTAS TRES (la primera es la más elegante): */
+  font-family: 'Pinyon Script', cursive; 
+  /* font-family: 'Alex Brush', cursive; */
+  /* font-family: 'Parisienne', cursive; */
+
+  margin: 0;
+  font-size: 100px; /* Estas fuentes son delgaditas, súbele el tamaño para que luzca */
+  font-weight: 400; /* No necesitan negrita, su belleza es lo fino */
+  color: #FF5E33; 
+  text-shadow: 2px 2px 4px rgba(0,0,0,0.1); /* Un sombreado suave para que resalte */
 }
 
-h2{
-  color:#ff4e6d;
+.toque{
+  font-size: 25px;
+  color:#FF5E33;
+}
+/* Estilo para los botones de WhatsApp */
+.btn {
+  display: inline-block;
+  background-color: #ff4e6d;
+  color: white;
+  padding: 12px 25px;
+  text-decoration: none;
+  border-radius: 25px;
+  margin-top: 15px;
+  font-weight: bold;
 }
 
 section {
   width: 90%;
-  max-width: 800px;
+  max-width: 900px;
   margin: 30px auto;
   background-color: white;
   padding: 20px;
+  border-radius: 15px;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.05); /* Sombra suave */
+  text-align: center;
+}
+
+/* Contenedor de servicios */
+/* 1. SECCIÓN DE SERVICIOS (Las primeras 3) */
+.card img.bal {
+  width: 130px;
+  height: auto;
+  margin: 0 auto;
+  display:block;
+}
+.contenedor {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start; /* Alinea todas al tope superior */
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+.card {
+  width: 200px;
+  text-align: center;
+}
+
+.card img {
+  width: 100%;
+  height: auto;      /* Esto evita que se corten */
+  display: block;    /* Elimina espacios extra abajo */
   border-radius: 10px;
-  border: 3px solid red; /* 👈 para ver el contenedor */
+}
+
+/* Color para los encabezados de los paquetes (H3) */
+.caja h3 {
+  background-color: #C3B091; /* Color Kaki */
+  color: white;              /* Letras blancas para que resalten sobre el fondo */
+  padding: 10px;
+  border-radius: 8px;
+  margin-top: 0;             /* Pegado al borde superior */
+  font-family: 'Arial', sans-serif; /* O la que prefieras */
+  text-transform: uppercase;
+  font-size: 18px;
+}
+
+/* Color para el texto y las listas (Letras Camel) */
+.caja p, 
+.caja li, 
+.caja .precio {
+  color: #C19A6B; /* Color Camel */
+  font-weight: 500;
+}
+
+/* Ajuste opcional para los checks (✓) */
+.caja li {
+  border-bottom: 1px solid #F5BC8E; /* Línea divisoria en Kaki clarito */
+}
+
+/* Si quieres que el botón también combine con este nuevo estilo: */
+.btn-paquete {
+  background-color: #784A2A; /* Botón Camel */
+  color: white;
+  border: none;
+  padding: 12px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: bold;
+  display: block;
+  transition: background 0.3s;
+}
+
+.btn-paquete:hover {
+  background-color: #C3B091; /* Cambia a Kaki al pasar el mouse */
+}
+
+/* 2. SECCIÓN DE GALERÍA (Alineadas igual que las primeras) */
+.contenedor-galeria {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start; /* También alineadas arriba */
+  gap: 20px;               /* Espacio entre fotos */
+  flex-wrap: wrap;
+}
+
+.contenedor-galeria img {
+  width: 100%;
+  max-width: 250px; /* Controla el tamaño máximo de cada foto */
+  height: auto;     /* Mantiene la proporción original */
+  border-radius: 10px;
+}
+
+/* Paquetes */
+.cajas {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.caja {
+  border: 2px solid #fff0f3;
+  padding: 20px;
+  border-radius: 10px;
+  width: 200px;
+  transition: transform 0.3s;
+}
+
+.caja:hover {
+  transform: scale(1.05);
+  border-color: #ff4e6d;
+}
+
+footer {
+  background-color: #FFCFC7;
+  text-align: center;
+  padding: 20px;
+  margin-top: 40px;
+  color: white;
 }

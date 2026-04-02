@@ -1,6 +1,7 @@
 <!DOCTYPE html>
   <html lang="es">
     <head>
+    <link href="https://fonts.googleapis.com/css2?family=Alex+Brush&family=Parisienne&family=Pinyon+Script&display=swap" rel="stylesheet">
     <meta charset="UTF-8">
     <title>Mesa de Dulces</title>
     <link rel="stylesheet" href="Styles.css">
@@ -8,7 +9,7 @@
     <body>
       <header>
         <h1>Punto Dulce</h1>
-        <p>El toque perfecto para tu evento</p>
+        <p class="toque">El toque perfecto para tu evento</p>
         <a href="https://wa.me/525653194281" target="_blank" class="btn">
   Cotiza por WhatsApp
         </a>
@@ -17,19 +18,31 @@
       <main>
         <section>
         <h2>¿Qué ofrecemos?</h2>
-        <div>
-        <img src="img1.jpg" alt="Cumpleaños">
-        <img src="img2.jpg" alt="Bodas">
-        <img src="img3.jpg" alt="Eventos especiales">
+        <div class="contenedor">
+          <div class="card">
+        <img src="imagenes/Balloons.jfif" alt="Cumpleaños" class="bal">
+        <p class="p1">Cumpleaños</p>
+          </div>
+
+          <div class="card">
+        <img src="imagenes/anillo.jfif" alt="Bodas">
+        <p class="p2">Bodas</p>
+          </div>
+
+          <div class="card">
+        <img src="imagenes/celebracion.jfif" alt="Eventos especiales">
+        <p>Eventos Especiales</p>
+        </div>
+
         </div>
         </section>
         
         <section>
           <h2>Nuestra Galería</h2>
-          <div>
-           <img src="img4.jpg" alt="mesa1">
-        <img src="img5.jpg" alt="mesa2">
-        <img src="img6.jpg" alt="mesa3">
+          <div class="contenedor-galeria">
+           <img src="imagenes/mesa1.jpeg" alt="mesa1">
+        <img src="imagenes/mesa2.jpeg" alt="mesa2">
+        <img src="imagenes/mesaboda.jfif" alt="mesa3">
           </div>
         </section>
         
@@ -38,7 +51,7 @@
           <div class="cajas">
             
             <div class="caja">
-            <h3>Paquetes Básicos</h3>
+            <h3>Paquete Básico</h3>
             <p>✓ 50 Personas</p>
             <p>✓ Montaje sencillo</p>
             </div>
